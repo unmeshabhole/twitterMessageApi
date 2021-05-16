@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:5001/api/messages?startDate=01/01/2021&endDate=05/15/2021",
+					"raw": "https://localhost:5001/api/messages?startDate=01/01/2021&endDate=05/17/2021",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -28,7 +28,7 @@
 						},
 						{
 							"key": "endDate",
-							"value": "05/15/2021"
+							"value": "05/17/2021"
 						}
 					]
 				}
@@ -49,7 +49,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Name\" : \"Unmesha\",\n\t\"Email\": \"test@test.com\",\n\t\"MessageText\": \"Hi there\",\n}",
+					"raw": "{\n\t\"Name\" : \"Unmesha\",\n\t\"Email\": \"test@test.com\",\n\t\"MessageText\": \"Hi there\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -71,6 +71,5 @@
 			},
 			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
