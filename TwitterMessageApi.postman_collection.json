@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "4d86e84d-5b14-49b7-a530-9e254de5d50f",
+		"name": "TwitterMessageApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetMessages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/messages?startDate=01/01/2021&endDate=05/15/2021",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "01/01/2021"
+						},
+						{
+							"key": "endDate",
+							"value": "05/15/2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertMessage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\" : \"Unmesha\",\n\t\"Email\": \"test@test.com\",\n\t\"MessageText\": \"Hi there\",\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/messages",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
